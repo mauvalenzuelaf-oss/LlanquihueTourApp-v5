@@ -266,7 +266,7 @@ Años en el cargo: 4 años
 VEHÍCULO
 Tipo de vehículo: Catamarán
 Capacidad: 40 pasajeros
-Período de adquisición: 2022
+Año de adquisición: 2022
 -----------------------------
 ```
 ---
