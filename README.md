@@ -25,28 +25,13 @@ El programa permite trabajar con dos áreas principales:
 
 ### 🧳 Servicios turísticos
 
-El sistema representa diferentes servicios turísticos ofrecidos por la empresa Llanquihue Tour mediante una jerarquía compuesta por una superclase y tres subclases.
+El sistema conserva la jerarquía utilizada para representar los servicios ofrecidos por Llanquihue Tour.
 
-El sistema se construye a partir de una clase general llamada `ServicioTuristico`, que contiene los atributos compartidos por todos los servicios:
+La clase `ServicioTuristico` funciona como superclase de `RutaGastronomica`, `PaseoLacustre` y `ExcursionCultural`. Esta estructura permite reunir en una sola clase los datos y comportamientos compartidos por todos los servicios, mientras que cada subclase incorpora la información propia de su actividad.
 
-```plaintext
-nombre
-duracionHoras
-```
+Cada subclase sobrescribe el método `mostrarInformacion()` mediante la anotación `@Override`. De esta forma, el sistema puede invocar el mismo método desde una referencia de tipo `ServicioTuristico` y obtener un resultado diferente según la clase real del objeto.
 
-A partir de esta clase se crean tres subclases especializadas:
-
-```plaintext
-1. `RutaGastronomica`
-2. `PaseoLacustre`
-3. `ExcursionCultural`
-```
-
-Cada subclase hereda los atributos comunes de `ServicioTuristico` e incorpora un atributo específico relacionado con su tipo de actividad.
-
-La superclase define el método `mostrarInformacion()`, que presenta los datos generales de un servicio turístico. Posteriormente, cada subclase sobrescribe este método mediante la anotación `@Override`, agregando la información específica correspondiente a su tipo de servicio.
-
-La clase `GestorServicios` crea una colección polimórfica de tipo `List<ServicioTuristico>` que contiene dos objetos de cada subclase.
+La clase `GestorServicios` crea y administra una colección polimórfica de tipo `List<ServicioTuristico>`, en la que se almacenan objetos de las tres subclases.
 
 ### 👥 Recursos operativos
 
@@ -57,6 +42,8 @@ Para representar a las personas vinculadas con la agencia, se utiliza la supercl
 También se incorpora la clase `Vehiculo`, que representa los medios de transporte utilizados por la agencia. Esta clase no hereda de `Persona`, porque corresponde a una entidad de naturaleza diferente.
 
 A pesar de pertenecer a estructuras distintas, `Empleado`, `ColaboradorExterno` y `Vehiculo` implementan la interfaz `Registrable`. Gracias a ello, pueden almacenarse y gestionarse conjuntamente dentro de una colección polimórfica.
+
+La clase `GestorEntidades` administra una colección de tipo `ArrayList<Registrable>`, en la que se almacenan objetos de las tres clases. Esta colección se recorre mediante un ciclo `for-each`, se invoca el método `mostrarResumen()` y se utiliza `instanceof` para identificar el tipo real de cada entidad.
 
 ---
 
