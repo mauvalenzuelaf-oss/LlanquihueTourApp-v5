@@ -162,51 +162,63 @@ También implementa la interfaz Registrable.
 ```
 
 **Vehiculo.java**
+```plaintext
 Clase independiente que representa un vehículo utilizado por la agencia.
 Contiene los atributos: tipoVehiculo; periodoAdquisicion; capacidadPasajeros.
 Implementa la interfaz Registrable.
+```
 
-ServicioTuristico.java:
+**ServicioTuristico.java**
+```plaintext
 Superclase que contiene los atributos comunes de los servicios turísticos: nombre; duracionHoras.
 También define el método mostrarInformacion().
+```
 
-RutaGastronomica.java:
+**RutaGastronomica.java**
+```plaintext
 Subclase de ServicioTuristico.
 Incorpora el atributo: numeroDeParadas
 Sobrescribe el método mostrarInformacion().
+```
 
-PaseoLacustre.java:
+**PaseoLacustre.java**
+```plaintext
 Subclase de ServicioTuristico.
 Incorpora el atributo: tipoEmbarcacion.
 Sobrescribe el método mostrarInformacion().
+```
 
-ExcursionCultural.java:
+**ExcursionCultural.java**
+```plaintext
 Subclase de ServicioTuristico.
 Incorpora el atributo: lugarHistorico.
 Sobrescribe el método mostrarInformacion().
 ```
 
-2. data
+# 2. data
 
 Contiene las clases responsables de almacenar y administrar los objetos.
 
+
+**GestorServicios.java**
 ```plaintext
-GestorServicios.java:
 Crea y devuelve una colección polimórfica: List<ServicioTuristico>
 La colección contiene objetos de las clases: RutaGastronomica; PaseoLacustre; ExcursionCultural.
+```
 
-GestorEntidades.java
+**GestorEntidades.java**
+```plaintext
 Administra una colección: ArrayList<Registrable>
 Permite agregar empleados, colaboradores externos y vehículos.
 También recorre la colección mediante un ciclo for-each, llama polimórficamente a mostrarResumen() y utiliza instanceof para identificar el tipo real de cada objeto.
 ```
 
-3. ui
+# 3. ui
 
 Contiene la clase encargada de la interacción con el usuario.
 
+**Main.java**
 ```plaintext
-Main.java:
 Implementa la interfaz gráfica mediante JOptionPane.
 Permite:
   1. Acceder al catálogo de servicios turísticos.
@@ -217,7 +229,6 @@ Permite:
   6. Validar los datos ingresados.
   7. Salir del sistema.
 ```
-
 ---
 
 ## ⚙️ Instrucciones para clonar y ejecutar el proyecto
