@@ -23,7 +23,7 @@ El programa permite trabajar con dos áreas principales:
 2. Recursos operativos.
 ```
 
-### 🧳 Servicios turísticos
+### 1. Servicios turísticos
 
 El sistema conserva la jerarquía utilizada para representar los servicios ofrecidos por **Llanquihue Tour**.
 
@@ -33,7 +33,7 @@ Cada subclase sobrescribe el método `mostrarInformacion()` mediante la anotaci�
 
 La clase `GestorServicios` crea y devuelve una colección polimórfica de tipo `List<ServicioTuristico>`, en la que se almacenan objetos de las tres subclases.
 
-### 👥 Recursos operativos
+### 2. Recursos operativos
 
 La aplicación incorpora la gestión de recursos operativos necesarios para el funcionamiento de **Llanquihue Tour**.
 
