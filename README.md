@@ -25,19 +25,19 @@ El programa permite trabajar con dos áreas principales:
 
 ### 🧳 Servicios turísticos
 
-El sistema conserva la jerarquía utilizada para representar los servicios ofrecidos por Llanquihue Tour.
+El sistema conserva la jerarquía utilizada para representar los servicios ofrecidos por **Llanquihue Tour**.
 
 La clase `ServicioTuristico` funciona como superclase de `RutaGastronomica`, `PaseoLacustre` y `ExcursionCultural`. Esta estructura permite reunir en una sola clase los datos y comportamientos compartidos por todos los servicios, mientras que cada subclase incorpora la información propia de su actividad.
 
 Cada subclase sobrescribe el método `mostrarInformacion()` mediante la anotación `@Override`. De esta forma, el sistema puede invocar el mismo método desde una referencia de tipo `ServicioTuristico` y obtener un resultado diferente según la clase real del objeto.
 
-La clase `GestorServicios` crea y administra una colección polimórfica de tipo `List<ServicioTuristico>`, en la que se almacenan objetos de las tres subclases.
+La clase `GestorServicios` crea y devuelve una colección polimórfica de tipo `List<ServicioTuristico>`, en la que se almacenan objetos de las tres subclases.
 
 ### 👥 Recursos operativos
 
-La aplicación incorpora la gestión de recursos operativos necesarios para el funcionamiento de Llanquihue Tour.
+La aplicación incorpora la gestión de recursos operativos necesarios para el funcionamiento de **Llanquihue Tour**.
 
-Para representar a las personas vinculadas con la agencia, se utiliza la superclase `Persona`, de la cual heredan `Empleado` y `ColaboradorExterno`. Esta jerarquía permite reutilizar los datos y comportamientos compartidos por ambos tipos de persona.
+Para representar a las personas vinculadas con la agencia, se utiliza la superclase `Persona`, de la cual heredan `Empleado` y `ColaboradorExterno`. Esta jerarquía permite reutilizar los datos comunes a ambos tipos de persona.
 
 También se incorpora la clase `Vehiculo`, que representa los medios de transporte utilizados por la agencia. Esta clase no hereda de `Persona`, porque corresponde a una entidad de naturaleza diferente.
 
