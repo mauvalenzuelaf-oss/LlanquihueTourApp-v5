@@ -273,4 +273,4 @@ Período de adquisición: 2022
 
 **Repositorio GitHub:** https://github.com/mauvalenzuelaf-oss/LlanquihueTourApp-v5
 
-**Fecha de entrega:** 06/07/2026
+**Fecha de entrega:** 13/07/2026
