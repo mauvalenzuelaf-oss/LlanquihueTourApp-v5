@@ -131,7 +131,7 @@ Vehiculo no hereda de Persona, ya que representa un tipo de entidad diferente.
 
 ## 🧩 Organización por paquetes
 
-# 1. model
+### 1. model
 
 Contiene las clases e interfaces que representan las entidades del sistema.
 
@@ -195,7 +195,7 @@ Incorpora el atributo: lugarHistorico.
 Sobrescribe el método mostrarInformacion().
 ```
 
-# 2. data
+### 2. data
 
 Contiene las clases responsables de almacenar y administrar los objetos.
 
@@ -213,7 +213,7 @@ Permite agregar empleados, colaboradores externos y vehículos.
 También recorre la colección mediante un ciclo for-each, llama polimórficamente a mostrarResumen() y utiliza instanceof para identificar el tipo real de cada objeto.
 ```
 
-# 3. ui
+### 3. ui
 
 Contiene la clase encargada de la interacción con el usuario.
 
