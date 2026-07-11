@@ -50,49 +50,13 @@ La clase `GestorServicios` crea una colección polimórfica de tipo `List<Servic
 
 ### 👥 Recursos operativos
 
-La aplicación incorpora una nueva jerarquía para representar a las personas vinculadas con las operaciones de la agencia.
+La aplicación incorpora la gestión de recursos operativos necesarios para el funcionamiento de Llanquihue Tour.
 
-La superclase Persona contiene los atributos comunes:
+Para representar a las personas vinculadas con la agencia, se utiliza la superclase `Persona`, de la cual heredan `Empleado` y `ColaboradorExterno`. Esta jerarquía permite reutilizar los datos y comportamientos compartidos por ambos tipos de persona.
 
-```plaintext
-nombre
-tiempoCargo
-```
+También se incorpora la clase `Vehiculo`, que representa los medios de transporte utilizados por la agencia. Esta clase no hereda de `Persona`, porque corresponde a una entidad de naturaleza diferente.
 
-A partir de esta clase se crean dos subclases:
-
-```plaintext
-Empleado
-ColaboradorExterno
-Empleado
-```
-
-La clase Empleado hereda los atributos de Persona e incorpora:
-
-```plaintext
-cargo
-ColaboradorExterno
-```
-
-La clase ColaboradorExterno hereda los atributos de Persona e incorpora:
-
-```plaintext
-nombreEmpresa
-tipoServicio
-Vehiculo
-```
-
-La clase Vehiculo representa los medios de transporte utilizados por la agencia.
-
-Sus atributos son:
-
-```plaintext
-tipoVehiculo
-periodoAdquisicion
-capacidadPasajeros
-```
-
-Vehiculo no hereda de Persona, ya que representa un tipo de entidad diferente.
+A pesar de pertenecer a estructuras distintas, `Empleado`, `ColaboradorExterno` y `Vehiculo` implementan la interfaz `Registrable`. Gracias a ello, pueden almacenarse y gestionarse conjuntamente dentro de una colección polimórfica.
 
 ---
 
