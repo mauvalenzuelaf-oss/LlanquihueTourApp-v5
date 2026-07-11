@@ -135,135 +135,80 @@ Vehiculo no hereda de Persona, ya que representa un tipo de entidad diferente.
 
 Contiene las clases e interfaces que representan las entidades del sistema.
 
-
-Registrable.java
-
-Interfaz que define el método:
-
-void mostrarResumen();
-
+```plaintext
+Registrable.java:
+Interfaz que define el método: void mostrarResumen().
 Es implementada por Empleado, ColaboradorExterno y Vehiculo.
 
-Persona.java
+Persona.java:
+Superclase que contiene los atributos comunes: nombre; tiempoCargo.
 
-Superclase que contiene los atributos comunes:
-
-nombre
-tiempoCargo
-Empleado.java
-
-Subclase de Persona.
-
-Incorpora el atributo:
-
-cargo
-
+Empleado.java: S
+ubclase de Persona.
+Incorpora el atributo: cargo.
 Además, implementa la interfaz Registrable.
 
-ColaboradorExterno.java
-
+ColaboradorExterno.java:
 Subclase de Persona.
-
-Incorpora los atributos:
-
-nombreEmpresa
-tipoServicio
-
+Incorpora los atributos: nombreEmpresa; tipoServicio.
 También implementa la interfaz Registrable.
 
-Vehiculo.java
-
+Vehiculo.java:
 Clase independiente que representa un vehículo utilizado por la agencia.
-
-Contiene los atributos:
-
-tipoVehiculo
-periodoAdquisicion
-capacidadPasajeros
-
+Contiene los atributos: tipoVehiculo; periodoAdquisicion; capacidadPasajeros.
 Implementa la interfaz Registrable.
 
-ServicioTuristico.java
-
-Superclase que contiene los atributos comunes de los servicios turísticos:
-
-nombre
-duracionHoras
-
+ServicioTuristico.java:
+Superclase que contiene los atributos comunes de los servicios turísticos: nombre; duracionHoras.
 También define el método mostrarInformacion().
 
-RutaGastronomica.java
-
+RutaGastronomica.java:
 Subclase de ServicioTuristico.
-
-Incorpora el atributo:
-
-numeroDeParadas
-
+Incorpora el atributo: numeroDeParadas
 Sobrescribe el método mostrarInformacion().
 
-PaseoLacustre.java
-
+PaseoLacustre.java:
 Subclase de ServicioTuristico.
-
-Incorpora el atributo:
-
-tipoEmbarcacion
-
+Incorpora el atributo: tipoEmbarcacion.
 Sobrescribe el método mostrarInformacion().
 
-ExcursionCultural.java
-
+ExcursionCultural.java:
 Subclase de ServicioTuristico.
-
-Incorpora el atributo:
-
-lugarHistorico
-
+Incorpora el atributo: lugarHistorico.
 Sobrescribe el método mostrarInformacion().
+```
 
 2. data
 
 Contiene las clases responsables de almacenar y administrar los objetos.
 
-GestorServicios.java
+```plaintext
+GestorServicios.java:
+Crea y devuelve una colección polimórfica: List<ServicioTuristico>
+La colección contiene objetos de las clases: RutaGastronomica; PaseoLacustre; ExcursionCultural.
 
-Crea y devuelve una colección polimórfica:
-
-List<ServicioTuristico>
-
-La colección contiene objetos de las clases:
-
-RutaGastronomica
-PaseoLacustre
-ExcursionCultural
 GestorEntidades.java
-
-Administra una colección:
-
-ArrayList<Registrable>
-
+Administra una colección: ArrayList<Registrable>
 Permite agregar empleados, colaboradores externos y vehículos.
-
 También recorre la colección mediante un ciclo for-each, llama polimórficamente a mostrarResumen() y utiliza instanceof para identificar el tipo real de cada objeto.
+```
 
 3. ui
 
 Contiene la clase encargada de la interacción con el usuario.
 
-Main.java
-
+```plaintext
+Main.java:
 Implementa la interfaz gráfica mediante JOptionPane.
-
 Permite:
-
-Acceder al catálogo de servicios turísticos.
-Registrar empleados.
-Registrar colaboradores externos.
-Registrar vehículos.
-Mostrar los recursos registrados.
-Validar los datos ingresados.
-Salir del sistema.
+  1. Acceder al catálogo de servicios turísticos.
+  2. Registrar empleados.
+  3. Registrar colaboradores externos.
+  4. Registrar vehículos.
+  5. Mostrar los recursos registrados.
+  6. Validar los datos ingresados.
+  7. Salir del sistema.
+```
 
 ---
 
@@ -356,6 +301,6 @@ Período de adquisición: 2022
 ```
 ---
 
-**Repositorio GitHub:** https://github.com/mauvalenzuelaf-oss/LlanquihueTourApp-v4
+**Repositorio GitHub:** https://github.com/mauvalenzuelaf-oss/LlanquihueTourApp-v5
 
 **Fecha de entrega:** 06/07/2026
