@@ -131,29 +131,37 @@ Vehiculo no hereda de Persona, ya que representa un tipo de entidad diferente.
 
 ## 🧩 Organización por paquetes
 
-1. model
+# 1. model
 
 Contiene las clases e interfaces que representan las entidades del sistema.
 
+
+**Registrable.java**
 ```plaintext
-Registrable.java:
 Interfaz que define el método: void mostrarResumen().
 Es implementada por Empleado, ColaboradorExterno y Vehiculo.
+```
 
-Persona.java:
+**Persona.java**
+```plaintext
 Superclase que contiene los atributos comunes: nombre; tiempoCargo.
+```
 
-Empleado.java: S
-ubclase de Persona.
+**Empleado.java**
+```plaintext
+Subclase de Persona.
 Incorpora el atributo: cargo.
 Además, implementa la interfaz Registrable.
+```
 
-ColaboradorExterno.java:
+**ColaboradorExterno.java**
+```plaintext
 Subclase de Persona.
 Incorpora los atributos: nombreEmpresa; tipoServicio.
 También implementa la interfaz Registrable.
+```
 
-Vehiculo.java:
+**Vehiculo.java**
 Clase independiente que representa un vehículo utilizado por la agencia.
 Contiene los atributos: tipoVehiculo; periodoAdquisicion; capacidadPasajeros.
 Implementa la interfaz Registrable.
