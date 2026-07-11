@@ -336,7 +336,7 @@ public class Main {
         int periodoActual = Year.now().getValue();
 
         Integer periodoAdquisicion = solicitarEnteroEnRango(
-                "Ingrese el período de adquisición:",
+                "Ingrese el año de adquisición:",
                 1990,
                 periodoActual
         );
