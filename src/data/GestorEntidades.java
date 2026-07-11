@@ -118,7 +118,7 @@ public class GestorEntidades {
                         + vehiculo.getPeriodoAdquisicion()
                         + "\n";
 
-                resumen += "Capacidad de pasajeros: "
+                resumen += "Capacidad: "
                         + vehiculo.getCapacidadPasajeros()
                         + "\n";
             }
