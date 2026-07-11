@@ -114,7 +114,7 @@ public class GestorEntidades {
                         + vehiculo.getTipoVehiculo()
                         + "\n";
 
-                resumen += "Período de adquisición: "
+                resumen += "Año de adquisición: "
                         + vehiculo.getPeriodoAdquisicion()
                         + "\n";
 
