@@ -1,5 +1,5 @@
 ![Duoc UC](https://www.duoc.cl/wp-content/uploads/2022/09/logo-0.png)
-# 🧠 Semana 7 - Evaluación Formativa N° 5 – Desarrollo Orientado a Objetos I
+# 🧠 Semana 8 - Evaluación Formativa N° 3 – Desarrollo Orientado a Objetos I
 
 ## 👤 Autor del proyecto
 - **Nombre completo:** Mauricio Francisco Valenzuela Fuentes
