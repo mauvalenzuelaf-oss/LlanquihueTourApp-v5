@@ -18,8 +18,10 @@ El sistema conserva la funcionalidad desarrollada durante las semanas anteriores
 
 El programa permite trabajar con dos áreas principales:
 
+```plaintext
 1. Servicios turísticos.
 2. Recursos operativos.
+```
 
 ### 🧳 Servicios turísticos
 
@@ -34,9 +36,11 @@ duracionHoras
 
 A partir de esta clase se crean tres subclases especializadas:
 
+```plaintext
 1. `RutaGastronomica`
 2. `PaseoLacustre`
 3. `ExcursionCultural`
+```
 
 Cada subclase hereda los atributos comunes de `ServicioTuristico` e incorpora un atributo específico relacionado con su tipo de actividad.
 
@@ -50,33 +54,43 @@ La aplicación incorpora una nueva jerarquía para representar a las personas vi
 
 La superclase Persona contiene los atributos comunes:
 
+```plaintext
 nombre
 tiempoCargo
+```
 
 A partir de esta clase se crean dos subclases:
 
+```plaintext
 Empleado
 ColaboradorExterno
 Empleado
+```
 
 La clase Empleado hereda los atributos de Persona e incorpora:
 
+```plaintext
 cargo
 ColaboradorExterno
+```
 
 La clase ColaboradorExterno hereda los atributos de Persona e incorpora:
 
+```plaintext
 nombreEmpresa
 tipoServicio
 Vehiculo
+```
 
 La clase Vehiculo representa los medios de transporte utilizados por la agencia.
 
 Sus atributos son:
 
+```plaintext
 tipoVehiculo
 periodoAdquisicion
 capacidadPasajeros
+```
 
 Vehiculo no hereda de Persona, ya que representa un tipo de entidad diferente.
 
@@ -120,6 +134,7 @@ Vehiculo no hereda de Persona, ya que representa un tipo de entidad diferente.
 1. model
 
 Contiene las clases e interfaces que representan las entidades del sistema.
+
 
 Registrable.java
 
