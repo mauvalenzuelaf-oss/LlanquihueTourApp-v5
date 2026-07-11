@@ -120,7 +120,7 @@ public class GestorEntidades {
 
                 resumen += "Capacidad: "
                         + vehiculo.getCapacidadPasajeros()
-                        + "\n";
+                        + " pasajeros\n";
             }
 
             resumen += "-----------------------------\n";
