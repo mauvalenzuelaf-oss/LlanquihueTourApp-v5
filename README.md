@@ -1,5 +1,5 @@
 ![Duoc UC](https://www.duoc.cl/wp-content/uploads/2022/09/logo-0.png)
-# 🧠 Semana 8 - Evaluación Formativa N° 3 – Desarrollo Orientado a Objetos I
+# 🧠 Semana 8 - Evaluación Sumativa N° 3 – Desarrollo Orientado a Objetos I
 
 ## 👤 Autor del proyecto
 - **Nombre completo:** Mauricio Francisco Valenzuela Fuentes
@@ -10,7 +10,7 @@
 
 ## 📘 Descripción general del sistema
 
-Este proyecto corresponde a la **Actividad Sumativa N.º 3** de la asignatura *Desarrollo Orientado a Objetos I*.
+Este proyecto corresponde a la **Actividad Sumativa Nº 3** de la asignatura *Desarrollo Orientado a Objetos I*.
 
 Se trata de una nueva ampliación de **LlanquihueTourApp**, orientada a la aplicación de interfaces, herencia, polimorfismo, colecciones genéricas, uso de `instanceof` e interfaces gráficas en Java.
 
